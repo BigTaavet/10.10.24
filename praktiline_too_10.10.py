@@ -1,10 +1,24 @@
 """Matemaatilised tehted"""
+import math
 
 
-# küsime kasutajalt ujuvkomaarvu kujul kolmnurga kaatetid a ja b
+a = float(input("Sisesta kaatet A: "))
+b = float(input("Sisesta kaatet B: "))
 
-# koosta muutuja a, lisa võimalus kasutajal sisestada arv, muuda see ujuvkomaarvuks
+c = math.sqrt(a**2 + b**2)
 
-# koosta muutuja b, lisa võimalus kasutajal sisestada arv, muuda see ujuvkomaarvuks
 
-# meie ülesandeks on leida hüpoteenus c, kolmnurga ümbermõõt ja pindala NB(vastused peavad olema ümardatud sajandikeni)
+ümbermõõt = a + b + c
+
+
+pindala = 0.5 * a * b
+
+# KASUTAN ROUND COMMANDI, ET ÜMARDADA VASTUSED KÜMNENDIKENI( LEIDSIN SELLE KASUTUSE NETIST )
+c = round(c, 2)
+ümbermõõt = round(ümbermõõt, 2)
+pindala = round(pindala, 2)
+
+
+print(f"Hüpoteenus c: {c}")
+print(f"Ümbermõõt: {ümbermõõt}")
+print(f"Pindala: {pindala}")
